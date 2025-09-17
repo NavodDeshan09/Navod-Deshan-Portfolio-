@@ -1,16 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../css/topnavigation.css";
 
 const NAV_LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { to: "/", label: "Home" },
+  { to: "/projects", label: "Projects" },
+   
+   { to: "/skills", label: "Skills" },
+   { to: "/contact", label: "Contact" },
 ];
 
 const Topnavigation: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef<HTMLUListElement>(null);
+  const location = useLocation();
 
   // Close menu on window resize to desktop
   useEffect(() => {
@@ -63,15 +66,16 @@ const Topnavigation: React.FC = () => {
         className={`navbar-links${menuOpen ? " active" : ""}`}
         ref={navRef}
       >
-        {NAV_LINKS.map(({ href, label }) => (
-          <li key={href}>
-            <a
-              href={href}
+        {NAV_LINKS.map(({ to, label }) => (
+          <li key={to}>
+            <Link
+              to={to}
               onClick={handleLinkClick}
+              className={location.pathname === to ? "active" : ""}
               tabIndex={menuOpen || window.innerWidth > 700 ? 0 : -1}
             >
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
