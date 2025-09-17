@@ -14,7 +14,7 @@
   border-bottom: 1px solid rgba(96, 165, 250, 0.18);
   z-index: 100;
   width: 100vw;
-  max-width: 900px;         /* Match .home-main */
+  max-width: 1400px;         /* Match .home-main */
   min-width: 320px;
 }
 
@@ -34,6 +34,11 @@
   padding: 0;
   align-items: left;
   justify-content: flex-end;
+}
+
+/* Extra: Smooth transition for mobile menu */
+.navbar-links {
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 
 .navbar-links li {
@@ -61,6 +66,11 @@
 /* Hamburger menu styles */
 .navbar-toggle {
   display: none;
+}
+
+/* Ensure hamburger is always on top */
+.navbar-toggle {
+  z-index: 102;
 }
 
 @media (max-width: 1024px) {
@@ -92,7 +102,6 @@
     font-size: 2rem;
     color: #2563eb;
     cursor: pointer;
-    z-index: 101;
     margin-left: auto;
   }
 
@@ -111,7 +120,67 @@
     box-shadow: 0 8px 32px rgba(37, 99, 235, 0.10);
     display: none;
     z-index: 99;
-    transition: all 0.3s ease;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .navbar-links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar-links li a {
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* Mobile: Hamburger menu, stacked links, bigger touch targets */
+@media (max-width: 700px) {
+  .glass-navbar {
+    padding: 0 1rem;
+    height: 56px;
+  }
+
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #2563eb;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100vw;
+    min-height: calc(100vh - 56px);
+    background: rgba(255, 255, 255, 0.98);
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0 1rem 0;
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.10);
+    display: none;
+    z-index: 99;
   }
 
   .navbar-links.active {
