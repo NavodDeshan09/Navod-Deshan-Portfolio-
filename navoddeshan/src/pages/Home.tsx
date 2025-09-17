@@ -1,6 +1,7 @@
 import React from "react";
 import Topnavigation from "../components/Topnavigation";
-import '../css/home.css'; // Assuming you have a CSS file for styles
+import '../css/home.css';
+import profileImg from '../assets/profile.jpg'; // <-- Import the image
 
 const Home: React.FC = () => {
   return (
@@ -9,9 +10,12 @@ const Home: React.FC = () => {
       <main className="home-main">
         <section className="home-section">
           <img
-            src="/images/profile.JPG"
+            src={profileImg}
             alt="Profile"
             className="home-profile-img"
+            onError={e => {
+              (e.target as HTMLImageElement).src = "https://ui-avatars.com/api/?name=Navod+Deshan&background=60a5fa&color=fff&size=128";
+            }}
           />
           <h1 className="home-title">Navod Deshan</h1>
           <h2 className="home-subtitle">
