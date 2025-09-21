@@ -14,12 +14,13 @@
   border-bottom: 1.5px solid var(--card-border, #2c2f4a);
   z-index: 100;
   width: 100vw;
-  max-width: 1400px;
+  max-width: 1390px;
   min-width: 320px;
 }
 
 .navbar-logo {
   font-size: 1.5rem;
+  margin-left: 20px;
   font-weight: 700;
   color: var(--primary, #00e0d3);
   letter-spacing: 1px;

@@ -4,6 +4,7 @@ import Topnavigation from "./components/Topnavigation";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Contacts from "./pages/Contacts";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/contacts" element={<Contacts />} />
         {/* Add more routes here as needed */}
       </Routes>
     </Router>

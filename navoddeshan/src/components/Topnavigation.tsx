@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { to: "/projects", label: "Projects" },
    
    { to: "/skills", label: "Skills" },
-   { to: "/contact", label: "Contact" },
+   { to: "/contacts", label: "Contacts" },
 ];
 
 const Topnavigation: React.FC = () => {

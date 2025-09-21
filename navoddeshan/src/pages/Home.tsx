@@ -29,7 +29,7 @@ const Home: React.FC = () => {
           </p>
           <div className="home-buttons">
             <button className="home-btn" onClick={() => navigate("/projects")}>View Projects</button>
-            <button className="home-btn secondary" onClick={() => navigate("/contact")}>Contact Me</button>
+            <button className="home-btn secondary" onClick={() => navigate("/contacts")}>Contact Me</button>
           </div>
         </section>
       </main>
