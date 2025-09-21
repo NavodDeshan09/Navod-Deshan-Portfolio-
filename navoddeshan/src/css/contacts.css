@@ -66,6 +66,74 @@
   word-break: break-all;
 }
 
+/* Feedback form styles */
+.feedback-form-section {
+  margin: 3rem auto 0 auto;
+  max-width: 420px;
+  background: var(--card-bg, #23263a);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 1.5px solid var(--card-border, #2c2f4a);
+  padding: 2rem 1.5rem;
+}
+
+.feedback-form-section h2 {
+  color: var(--primary, #00e0d3);
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  background: var(--background, #181824);
+  color: var(--text, #fff);
+  border: 1px solid var(--card-border, #2c2f4a);
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 1.5px solid var(--primary, #00e0d3);
+}
+
+.feedback-form button {
+  background: var(--primary, #00e0d3);
+  color: #23263a;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.feedback-form button:hover {
+  background: #fff;
+  color: var(--primary, #00e0d3);
+}
+
+.feedback-success {
+  color: var(--primary, #00e0d3);
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+}
+
 /* Responsive Styles */
 @media (max-width: 900px) {
   .contacts-list {

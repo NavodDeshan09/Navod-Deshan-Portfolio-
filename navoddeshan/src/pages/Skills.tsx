@@ -58,11 +58,37 @@ const skills = [
 		description: "Advanced CSS with variables and mixins.",
 	},
 	{
-		name: "Jest",
-		icon: "🧪",
-		description: "Unit and integration testing for JavaScript apps.",
+		name: "CI/CD",
+		icon: "🔁",
+		description:
+			"Continuous Integration and Deployment pipelines (GitHub Actions, Jenkins).",
 	},
-	// Add more skills as needed
+	{
+		name: "Jira",
+		icon: "📋",
+		description: "Agile project management and issue tracking.",
+	},
+	{
+		name: "Firebase",
+		icon: "🔥",
+		description: "Realtime database, authentication, and hosting.",
+	},
+	{
+		name: "AWS",
+		icon: "☁️",
+		description: "Cloud services for scalable applications.",
+	},
+	{
+		name: "Azure",
+		icon: "🔷",
+		description: "Microsoft Azure cloud platform and services.",
+	},
+	{
+		name: "IoT",
+		icon: "📡",
+		description:
+			"Internet of Things device integration and data processing.",
+	},
 ];
 
 const Skills: React.FC = () => (
