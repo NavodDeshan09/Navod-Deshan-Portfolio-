@@ -1,6 +1,6 @@
 .projects-main {
   min-height: 100vh;
-  background: linear-gradient(135deg, #e0f2fe 0%, #60a5fa 100%);
+  background: var(--background, #181824); /* Unified background */
   padding: 6rem 1rem 2rem 1rem;
   box-sizing: border-box;
 }
@@ -8,10 +8,11 @@
 .projects-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #2563eb;
+  color: var(--primary, #00e0d3); /* Use primary accent */
   margin-bottom: 2.5rem;
   font-weight: 700;
   letter-spacing: 1px;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
 .projects-grid {
@@ -23,35 +24,38 @@
 }
 
 .project-card {
-  background: rgba(255,255,255,0.85);
+  background: var(--card-bg, #23263a); /* Card background */
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(37,99,235,0.10);
+  box-shadow: 0 4px 24px rgba(0,224,211,0.10); /* Match skills shadow */
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: transform 0.2s, box-shadow 0.2s;
-  border: 1.5px solid rgba(96,165,250,0.18);
+  border: 1.5px solid var(--card-border, #2c2f4a);
   backdrop-filter: blur(8px);
 }
 
 .project-card:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(37,99,235,0.18);
+  box-shadow: 0 8px 32px rgba(0,224,211,0.18); /* Match skills hover */
+  border: 1.5px solid var(--primary, #00e0d3);
 }
 
 .project-card-title {
   font-size: 1.4rem;
-  color: #1e3a8a;
+  color: var(--text, #fff); /* Use text color */
   margin-bottom: 0.5rem;
   font-weight: 600;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
 .project-card-desc {
-  color: #334155;
+  color: var(--secondary, #b0b3c6); /* Use secondary color */
   font-size: 1.05rem;
   margin-bottom: 1rem;
   flex: 1;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .project-card-tags {
@@ -60,7 +64,7 @@
 
 .project-tag {
   display: inline-block;
-  background: #2563eb;
+  background: var(--primary, #00e0d3); /* Accent color */
   color: #fff;
   border-radius: 6px;
   padding: 0.25rem 0.75rem;
@@ -71,19 +75,19 @@
 
 .project-card-link {
   margin-top: auto;
-  color: #2563eb;
+  color: var(--primary, #00e0d3);
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid #2563eb;
+  border: 1px solid var(--primary, #00e0d3);
   border-radius: 6px;
   padding: 0.5rem 1.2rem;
   transition: background 0.2s, color 0.2s;
-  background: #fff;
+  background: #23263a;
 }
 
 .project-card-link:hover {
-  background: #2563eb;
-  color: #fff;
+  background: var(--primary, #00e0d3);
+  color: #23263a;
 }
 
 /* Responsive */
