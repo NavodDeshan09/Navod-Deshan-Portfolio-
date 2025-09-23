@@ -11,7 +11,7 @@ const contactMethods = [
 	{
 		type: "LinkedIn",
 		value: "linkedin.com/in/navoddeshan",
-		link: "www.linkedin.com/in/navod-deshan-wickramaarachchi-b74666215",
+		link: "https://www.linkedin.com/in/navod-deshan-wickramaarachchi-b74666215/",
 		icon: "🔗",
 	},
 	{

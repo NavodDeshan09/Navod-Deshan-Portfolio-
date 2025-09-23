@@ -11,30 +11,30 @@ const projects = [
   },
   {
     title: "Alwon ERP System",
-    description: "A real-time IoT dashboard for smart home devices, using Node.js, MQTT, and MongoDB.",
+    description: "ERP system for small to medium enterprises to manage inventory, sales, and customer relationships.",
     link: "https://github.com/minduleeWick/Alwon",
     tags: ["Node.js", "Typescript", "MongoDB", "Render", "Vercel"],
   },
   {
     title: "Karate e - Learning application ",
-    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    description: "A mobile app for learning karate techniques, integrating machine learning for motion analysis.",
     link: "https://github.com/NavodDeshan/Smart-Karate-E-Learning-System-",
     tags: ["ML", "React Native", "Firebase", "IOT"],
   },
    {
     title: "Step counter IOT device with real time data processing",
-    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    description: "An IoT device that counts steps and sends real-time data to a web dashboard using MQTT and Node-RED.",
     tags: ["MQTT", "Node red", "Arduino"],
   },
  {
     title: "Hiru Capital Investment Management System",
-    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    description: "A full-stack investment management platform with user authentication, portfolio tracking, and analytics.",
     link: "https://github.com/NavodDeshan/Hiru-Captial-Investment",
     tags: ["React", "Express", "Node.js", "MongoDB", "Netllyfy", "Render"],
   },
   {
     title: "Security attendance management system",
-    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    description: "A web application to manage and track attendance of security personnel using RFID technology.",
     tags: [".Net core", "Entity frame work", "Bitbucket"],
   },
 ];
