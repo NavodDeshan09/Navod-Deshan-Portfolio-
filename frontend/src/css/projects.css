@@ -64,7 +64,7 @@
 
 .project-tag {
   display: inline-block;
-  background: var(--primary, #00e0d3); /* Accent color */
+  background: #000; /* Changed to black */
   color: #fff;
   border-radius: 6px;
   padding: 0.25rem 0.75rem;
