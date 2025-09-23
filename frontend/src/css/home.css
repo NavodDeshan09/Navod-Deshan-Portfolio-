@@ -18,22 +18,51 @@
   min-width: 0;
   height: 600px;
   max-height: 900px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
   background: var(--card-bg, #23263a); /* Unified card background */
   box-shadow: 0 8px 32px rgba(0,224,211,0.10); /* Match skills/projects shadow */
   padding: 2.5rem 2rem;
   margin: 2rem auto;
   margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.5s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
-  will-change: transform;
   border-radius: 18px;
   border: 1.5px solid var(--card-border, #2c2f4a);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  background: url('../assets/profile.jpg') no-repeat left center/cover;
+  opacity: 0.50;
+  z-index: 1;
+  border-radius: 18px 0 0 18px;
+}
+
+.home-title,
+.home-subtitle,
+.home-desc,
+.home-buttons {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+.home-section .home-title,
+.home-section .home-subtitle,
+.home-section .home-desc,
+.home-section .home-buttons {
+  margin-left: 48%;
+  width: 52%;
 }
 
 .home-profile-img {
