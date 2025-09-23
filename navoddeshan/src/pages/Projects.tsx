@@ -6,20 +6,36 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio built with React and TypeScript, featuring responsive design and smooth animations.",
-    link: "https://github.com/your-github/portfolio",
+    link: "https://github.com/NavodDeshan09/Navod-Deshan-Portfolio-",
     tags: ["React", "TypeScript", "CSS"],
   },
   {
-    title: "IoT Smart Home",
+    title: "Alwon ERP System",
     description: "A real-time IoT dashboard for smart home devices, using Node.js, MQTT, and MongoDB.",
-    link: "https://github.com/your-github/iot-smart-home",
-    tags: ["Node.js", "IoT", "MongoDB"],
+    link: "https://github.com/minduleeWick/Alwon",
+    tags: ["Node.js", "Typescript", "MongoDB", "Render", "Vercel"],
   },
   {
-    title: "Chat App",
+    title: "Karate e - Learning application ",
     description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
-    link: "https://github.com/your-github/chat-app",
-    tags: ["React", "Express", "Socket.io"],
+    link: "https://github.com/NavodDeshan/Smart-Karate-E-Learning-System-",
+    tags: ["ML", "React Native", "Firebase", "IOT"],
+  },
+   {
+    title: "Step counter IOT device with real time data processing",
+    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    tags: ["MQTT", "Node red", "Arduino"],
+  },
+ {
+    title: "Hiru Capital Investment Management System",
+    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    link: "https://github.com/NavodDeshan/Hiru-Captial-Investment",
+    tags: ["React", "Express", "Node.js", "MongoDB", "Netllyfy", "Render"],
+  },
+  {
+    title: "Security attendance management system",
+    description: "A full-stack chat application with authentication, built using React, Express, and Socket.io.",
+    tags: [".Net core", "Entity frame work", "Bitbucket"],
   },
 ];
 
