@@ -30,7 +30,7 @@ const projects = [
     title: "Hiru Capital Investment Management System",
     description: "A full-stack investment management platform with user authentication, portfolio tracking, and analytics.",
     link: "https://github.com/NavodDeshan/Hiru-Captial-Investment",
-    tags: ["React", "Express", "Node.js", "MongoDB", "Netllyfy", "Render"],
+    tags: ["React", "Express", "Node.js", "MongoDB", "Netlify", "Render"],
   },
   {
     title: "Security attendance management system",
